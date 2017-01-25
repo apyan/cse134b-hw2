@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href = "images" target = "_blank"> <!-- img srcs on this html file no longer need to specifc the images directory and all hyperlinks will not need to specify
+  _blank to indicate opening up new window --> 
+    <meta charset="UTF-8">
+    <title>Testing Unused HTML Tags</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"> <!-- used to link to style sheet -->
+</head>
+
+<body>
+<p> This creates a paragraph separated by newline by the &lt;p&gt; tag</p>
+
+<p>See? Separated by new line </p>
+<hr>
+<p>Check out how the &lt;hr&gt; tag is used between the paragraph above this one and this paragraph</p>
+<pre>Wow look at this text, this was made with the &lt;pre&gt; tag which preserves
+stuff like line breaks      tabs and        spaces! Written in Courier by 
+
+default (wow preserves new line as well)</pre>
+
+<p>My attempt at quoting myself: </p>
+<blockquote>"As you can see, this is the &lt;blockquote&gt; in action. This indents the
+text to look like you're quoting someone" <br>
+<cite>-Mark Santa Presca (cited using &lt;cite&gt;)</cite></blockquote>
+
+<p> An ordered list of the top 4 NBA all time shooters using &lt;ol&gt; tag with each entry inputted using the &lt;li&gt; tag</p>
+<ol>
+  <li> Kareem Abdul-Jabbar </li>
+  <li> Karl Malone </li>
+  <li> Kobe Bryant </li>
+  <li> Michael Jordan </li>
+</ol>
+
+<p> Now for to an unordered list of things I like using the &lt;ul&gt; tag </p>
+<ul>
+  <li> Pizza </li>
+  <li> Ice Cream </li>
+  <li> CSE 134B </li>
+</ul>
+</body>
+
+<p> How about we make some descriptive lists using the &lt;dl&gt; tag and &lt;dt&gt; and &lt;dd&gt; as list descriptors </p>
+<dl> 
+  <dt>UCSD</dt>
+  <dd>University of California, San Diego</dd>
+  <dt>UCLA</dt>
+  <dd>University of California, Los Angeles</dd>
+</dl>
+
+<p>I'll showcase an image of ninja using the &lt;img&gt; tag as a well making it a figure with &lt;figure&gt;</p>
+<figure>
+  <img src = "images/ninja.jpg"> 
+  <figcaption>Fig1. This is a caption of this ninja image I found using &lt;figcaption&gt;</figcaption>
+</figure>
+
+<em>I'm emphasized by the &lt;em&gt; tag</em><br>
+<strong>I'm strong like the &lt;strong&gt; tag</strong><br>
+<small>I'm kinda tiny relative to the rest of the text here made by the &lt;small&gt; tag</small><br>
+<s>Strike me out with the &lt;s&gt; tag</s><br>
+<q>Let's make this a quotation using &lt;q&gt;</q><br>
+
+
+
+
+
+<p>If you hover over <abbr title = "National Basketball Association">NBA</abbr>, you'll see what it stands for (made using &lt;abbr&gt;)</p>
+
+<code> print "Hello World!" ; # You can write computer code in text using the &lt;code&gt; tag </code>
+<p>Below is the output of that line of code shown using the &lt;sample&gt; tag</p>
+<samp>Hello World!</samp>
+<p>Also below is the keyboard input you would use to run this code in python using &lt;kbd&gt;</p>
+<kbd> python HelloWorld.py </kbd>
+
+<p>The formula for the area of a square is s<sup>2</sup> where s is a side length (using &lt;sup&gt;)</p>
+<p>We can give some subscripts as well. x<sub>1</sub> (using &lt;sub&gt;)</p>
+
+<p>Let's play with some legacy tags: <i>italics</i> <b>bold</b> <u>underline</u> (done with &lt;i&gt;, &lt;b&gt;, &lt;u&gt;)</p>
+
+<mark>HIGHLIGHT ALL THE THINGS with &lt;mark&gt;</mark><br>
+
+<ruby>
+漢 <rt> ㄏㄢˋ </rt>
+</ruby>
+
+<p>Try to shrink your browser window and look at how this huge chain of verys <wbr>veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery <wbr>will be broken into 
+a line break 
+</p>
+
+<p>I love the <del>Golden State Warriors</del> <ins>LA Lakers</ins>! I made this using &lt;del&gt; and &lt;ins&gt; </p>
+
+<p> The &lt;iframe&gt; tag makes it possible to display a webpage within another webage (look at our team page!) </p> 
+<iframe src = "team.html"></iframe>
+
+<p> You can embed media into a page using the &lt;embed&gt; tag </p>
+<embed src = "images/shaq.gif">
