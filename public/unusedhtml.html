@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <title>Testing Unused HTML Tags</title>
     <link rel="stylesheet" type="text/css" href="theme.css"> <!-- used to link to style sheet -->
+    <style>
+    h3 { color : green; }
+    </style>
 </head>
 
 <body>
@@ -71,6 +74,7 @@ text to look like you're quoting someone" <br>
 <samp>Hello World!</samp>
 <p>Also below is the keyboard input you would use to run this code in python using &lt;kbd&gt;</p>
 <kbd> python HelloWorld.py </kbd>
+<p>Let's create a <var>variable</var> using the &lt;var&gt; tag</p>
 
 <p>The formula for the area of a square is s<sup>2</sup> where s is a side length (using &lt;sup&gt;)</p>
 <p>We can give some subscripts as well. x<sub>1</sub> (using &lt;sub&gt;)</p>
@@ -80,7 +84,14 @@ text to look like you're quoting someone" <br>
 <mark>HIGHLIGHT ALL THE THINGS with &lt;mark&gt;</mark><br>
 
 <ruby>
-漢 <rt> ㄏㄢˋ </rt>
+ <rb>旧
+ <rb>金
+ <rb>山
+ <rt>jiù
+ <rt>jīn
+ <rt>shān
+ <rtc><rp>San Francisco
+ </rp>
 </ruby>
 
 <p>Try to shrink your browser window and look at how this huge chain of verys <wbr>veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery <wbr>will be broken into 
@@ -94,3 +105,39 @@ a line break
 
 <p> You can embed media into a page using the &lt;embed&gt; tag </p>
 <embed src = "images/shaq.gif">
+
+<p> It is <time>3:17</time> right now. Do note that the &lt;time&gt; does not do anything for formatting </p>
+<textarea>This is a textarea made with &lt;textarea&gt;. It acts as a textbox to descibe something or can be used to pipe input elsewhere</textarea>
+
+<h3> Wow check out this use of&lt;style&gt;, which makes all &lt;h3s&gt; turn their text green!!! </h3>
+
+<p> If you check this paragraph, I can make <span style = "color:crimson">this part of this paragraph crimson</span> wow so cool I did this using &lt;span&gt;</p>
+
+<p> I can make a drop down box using &lt;select&gt; with choices made with &lt;option&gt; and separate options using &lt;optgroup&gt;.</p>
+
+<select>
+  <optgroup label = "Fruits">
+    <option>Apples</option>
+    <option>Oranges</option>
+    <option>Bananas</option>
+    <option>Strawberries</option>
+  </optgroup>
+  
+  <optgroup label = "Vegetables">
+    <option>Brocolli</option>
+    <option>Carrot</option>
+    <option>Cauliflower</option>
+    <option>Green Beans</option>
+  </optgroup>
+</select>
+
+<section>
+<h3>This is a &lt;h3&gt; header</h3>
+  <p>I can partition areas of a document such as this paragraph from the rest of the document using the &lt;section&gt; tag.<br> Also notice that the &lt;h3&gt; is green like the other one due to the &lt;stlye&gt; tag.<br>
+  It's really useful for making organized text areas!</p>
+</section>
+
+<p> We can make a visual progress bar using &lt;progress&gt; </p>
+Completion of HW2 <progress value="75" max="100"></progress><br>
+
+<keygen name="security">
