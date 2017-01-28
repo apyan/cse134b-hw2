@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
   <base href = "images" target = "_blank"> <!-- img srcs on this html file no longer need to specifc the images directory and all hyperlinks will not need to specify
   _blank to indicate opening up new window --> 
@@ -41,9 +41,8 @@ text to look like you're quoting someone" <br>
   <li> Ice Cream </li>
   <li> CSE 134B </li>
 </ul>
-</body>
 
-<p> How about we make some descriptive lists using the &lt;dl&gt; tag and &lt;dt&gt; and &lt;dd&gt; as list descriptors </p>
+<p>How about we make some descriptive lists using the &lt;dl&gt; tag and &lt;dt&gt; and &lt;dd&gt; as list descriptors</p>
 <dl> 
   <dt>UCSD</dt>
   <dd>University of California, San Diego</dd>
@@ -91,7 +90,6 @@ text to look like you're quoting someone" <br>
  <rt>jīn</rt>
  <rt>shān</rt>
  <rtc><rp>San Francisco</rp>
- </rp>
  </rtc>
 </ruby>
 
@@ -107,7 +105,8 @@ a line break
 <p> You can embed media into a page using the &lt;embed&gt; tag </p>
 <embed src = "images/shaq.gif">
 
-<p> It is <time>3:17</time> right now. Do note that the &lt;time&gt; does not do anything for formatting </p>
+<p>With Time: October 31 is <time datetime="2008-10-31 20:00">Halloween</time>!</p>
+<p> Do note that the &lt;time&gt; does not do anything for formatting </p>
 <textarea>This is a textarea made with &lt;textarea&gt;. It acts as a textbox to descibe something or can be used to pipe input elsewhere</textarea>
 
 <h3> Wow check out this use of&lt;style&gt;, which makes all &lt;h3s&gt; turn their text green!!! </h3>
@@ -160,15 +159,13 @@ Completion of HW2 <progress value="75" max="100"></progress><br>
 </main>
 
 
-<p>The address of the University of California is
-<address>9500 Gilman Dr, La Jolla, CA 92093</address>
-which I made using the &lt;address&gt; tag</p>
+<p>The address of the University of California is </p> <address>9500 Gilman Dr, La Jolla, CA 92093</address> <p>which I made using the &lt;address&gt;</p>
 
 <p>Click either the cat or the dog to google search for cats or dogs. I created this using the &lt;area&gt; tag to make an image redirect to a link.</p>
-<img src="images/catAndDog.jpg" width="145" height="126" usemap="#planetmap">
+<img src="images/catAndDog.jpg" width="145" height="126" usemap="#planetmap" alt="n/a">
 <map name="planetmap">
-  <area shape="rect" coords="0,0,73,126" href="https://www.google.com/#q=cat">
-  <area shape="rect" coords="74,0,126,126" href="https://www.google.com/#q=dog">
+  <area shape="rect" coords="0,0,73,126" href="https://www.google.com/#q=cat" alt="n/a">
+  <area shape="rect" coords="74,0,126,126" href="https://www.google.com/#q=dog" alt="n/a">
 </map>
 
 <p>Have you noticed that clicking the images open up new pages, even though we don't have the attribute target="_blank"? This is because we defined
@@ -182,21 +179,19 @@ in the header of this html page that all links will open a new tag using the &lt
   <p>Interesting article content. Wow this is so interesting.</p>
 </article>
 
-<p>This sentence uses the &lt;aside&gt; tag.
+<p>This sentence uses the &lt;aside&gt; tag. </p>
   <aside>
     <h4>Note: Sentence means a set of words that is complete in itself, typically containing a subject and predicate</h4>
   </aside>
-</p>
 
-<p>Shelter - by Porter Robinson and Madeon. Hit the play button to listen to this song. This was made using the &lt;audio&gt; tag. This does not autoplay due to the &lt;param&gt; tag<br>
+<p>Shelter - by Porter Robinson and Madeon. Hit the play button to listen to this song. This was made using the &lt;audio&gt; tag. This does not autoplay due to the &lt;param&gt; tag</p><br>
   <audio controls>
     <source src="images/Shelter.mp3" type="audio/mpeg">
-    <param name="autoplay" value="false">
     Your browser does not support the audio element.
   </audio>
-</p>
 
-<p>Languages that read right to left (like Arabic) use the &lt;bdi&gt; (bi-direction isolation) tag to correctly format a certain part.<br>
+
+<p>Languages that read right to left (like Arabic) use the &lt;bdi&gt; (bi-direction isolation) tag to correctly format a certain part.</p><br>
 Using the &lt;bdi&gt; tag
   <ul>
     <li>User <bdi>hrefs</bdi>: 60 points</li>
@@ -209,16 +204,15 @@ Using the &lt;bdi&gt; tag
     <li>User jdoe: 80 points</li>
     <li>User إيان: 90 points</li>
   </ul>
-</p>
 
-<p>We can use the &lt;bdo&gt; tag to override the current text direction. I use the dir attribute with the &lt;bdo&gt; tag to reverse this sentence. <br>
-<bdo dir="rtl">This sentence is backwards.</bdo></p> 
+
+<p>We can use the &lt;bdo&gt; tag to override the current text direction. I use the dir attribute with the &lt;bdo&gt; tag to reverse this sentence. <bdo dir="rtl">This sentence is backwards.</bdo></p> 
 
 <p>We can use the &lt;canvas&gt; tag to create a blank canvas.<br>
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
 </canvas></p>
 
-<p>With the &lt;col&gt; tag, we are able to manipulate each column in a table like color of each column. The &lt;colgroup&gt; tag can group &lt;col&gt; tags together.
+<p>With the &lt;col&gt; tag, we are able to manipulate each column in a table like color of each column. The &lt;colgroup&gt; tag can group &lt;col&gt; tags together.</p>
   <table width="200" border="1">
     <colgroup>
       <col style="background-color:red"/>
@@ -235,16 +229,16 @@ Using the &lt;bdi&gt; tag
       <td>My first HTML</td>
       <td>$53</td>
     </tr>
-  </table></p>
+  </table>
 
-<p>The data-* attribute creates custom data attributes. Here, I create custom data-animal-type attributes.
+<p>The data-* attribute creates custom data attributes. Here, I create custom data-animal-type attributes.</p>
   <ul>
     <li data-animal-type="bird">Owl</li>
     <li data-animal-type="fish">Salmon</li> 
     <li data-animal-type="spider">Tarantula</li> 
-  </ul></p>
+  </ul>
 
-<p>We can create a list of data in a drop down menu of browsers. (Note: does not work on Safari)
+<p>We can create a list of data in a drop down menu of browsers. (Note: does not work on Safari)</p>
   <input list="browsers" name="browser">
   <datalist id="browsers">
     <option value="Internet Explorer"></option>
@@ -252,7 +246,7 @@ Using the &lt;bdi&gt; tag
     <option value="Chrome"></option>
     <option value="Opera"></option>
     <option value="Safari"></option>
-  </datalist></p>
+  </datalist>
 
 <p>The &lt;dfn&gt; tag is used to represent defining an instance of a term. Here, we define HTML.<br>
 <dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
@@ -266,9 +260,9 @@ Using the &lt;bdi&gt; tag
 <p> We can make a separate box for input using &lt;legend&gt; and group it using &lt;fieldset&gt; We can also define labels for each input box using &lt;label&gt;</p>
  <fieldset>
   <legend>Tell me about yourself</legend>
-  <label for="text">School<input type="text"><br> </label>
-  <label for="text">City<input type="text"><br> </label>
-  <label for="text">Favorite color: <input type="text"> </label>
+  <label>School<input type="text"><br> </label>
+  <label>City<input type="text"><br> </label>
+  <label>Favorite color: <input type="text"> </label>
  </fieldset>
 
 <p> We can show a literal meter using &lt;meter&gt; It will be filled halfway through</p> 
@@ -297,7 +291,9 @@ document.write("Here is some javascript code that prints out stuff! using the sc
   <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="green" />
 </svg>
 
+
 <footer>
-  <p>This is a footer made using &lt;footer&gt;</p>
-  <p>You can find our newest app AmiiboDex coming soon!</p>
+  This is a footer made using &lt;footer&gt;
+  You can find our newest app AmiiboDex coming soon!
 </footer>
+</body>
